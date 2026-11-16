@@ -10,8 +10,13 @@ nav a{color:var(--leise);text-decoration:none;margin-left:18px;font-size:15px}na
 main{padding:48px 0 64px}h1{font-size:34px;line-height:1.2;margin:0 0 12px}h2{font-size:21px;margin:36px 0 8px}
 .leise{color:var(--leise)}a{color:var(--akzent)}
 .produkte{display:grid;gap:14px;margin-top:20px}
-.produkt{background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:18px 20px}
+.produkt{display:flex;gap:16px;align-items:flex-start;background:var(--karte);border:1px solid var(--linie);border-radius:12px;padding:18px 20px}
 .produkt h3{margin:0 0 4px;font-size:18px}.produkt p{margin:0}
 .stand{display:inline-block;font-size:13px;color:var(--leise);border:1px solid var(--linie);border-radius:999px;padding:1px 10px;margin-left:8px;vertical-align:2px}
 footer{border-top:1px solid var(--linie);padding:20px 0 40px;font-size:14px;color:var(--leise)}footer a{color:var(--leise);margin-right:16px}
 address{font-style:normal}
+.symbol{width:64px;height:64px;flex:none}
+@media (max-width:480px){.symbol{width:48px;height:48px}}
+.produkt>div{min-width:0}
+.produkt p{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+.symbol{border-radius:14px}
